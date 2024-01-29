@@ -2,21 +2,65 @@
 <html>
 <head>
 	<title>Sloans first webdesign project</title>
+
+	<style type="text/css">
+		aside{
+			float: left;
+			height: 900px; /*this makes the side bar the size of the screen*/
+			width: 150px;
+			background-color: #ad5865;
+			padding: 20px;}
+
+		body{
+			background-color: #bd2436;}
+
+		article{
+			padding: 20px;
+			background-color: #d66f7f;
+			width: 80%;
+			float: left;}
+
+		img{
+			margin: 16px;
+			float: left;
+			width: 40%;
+			height: auto;}
+
+		header{
+		background-color: #e03a54;
+		padding: 20px;
+		width:50%;}
+
+	</style>
+
 </head>
 <body>
-	<h1 style='text-align: center'>Sloan W</h1>
+	<header>
+	<h1>Sloan W</h1>
 	<h2>Major: Mechanical Engineering</h2>
+	</header>
 
-	<section>
-		<h2>Info About Me:</h2>
-
+	<aside>
+		<h3>Info About Me:</h2>
 		<ul>
 			<li>IP: ***********</li>
 			<li>Favorite Color: <span style='color: #ff0000' >Red</span></li>
 			<li>Hometown: Denver, CO</li>
 		</ul>
-	</section>
-	<aside></aside>
+	</aside>
+
+	<article>
+		<h3>Sloan's Favorite Place: Mutiny Info Cafe</h3>
+		<img src="project1/mutiny.jpg" alt="mutiny">
+		<p>My favorite place in the world is a cafe in Denver called Mutiny. Aside from making amazing coffee Mutiny also sells used books, comics, records, and local art. They also hold local events like comedy nights, concerts, and poetry readings. They also have great baklava and bagels.</p>
+	</article>
+	<p style='color: #bd2436'>invisible</p>
+	<article id="Restaurant">
+		<h3>Sloan's Favorite Restaurant: Snarfs</h3>
+		<img src="project1/snarfs.jpg" alt="snarfs">
+		<p>This is snarfs. They make the best sandwiches. <a href="https://www.eatsnarfs.com/" target="_blank">Click to learn more</a></p>
+	</article>
+
 
 </body>
 </html>
