@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sloans first webdesign project</title>
+	<title>Sloan's webdesign project</title>
 
 	<style type="text/css">
-		aside{
+		aside{/* This only applies to the Info About Me blurb*/
 			float: left;
-			height: 900px; /*this makes the side bar the size of the screen*/
+			height: 200px;
 			width: 150px;
 			background-color: #ad5865;
 			padding: 20px;}
@@ -18,18 +18,19 @@
 			padding: 20px;
 			background-color: #d66f7f;
 			width: 80%;
-			float: left;}
+			float: right;}
 
 		img{
 			margin: 16px;
 			float: left;
 			width: 40%;
-			height: auto;}
+			height: auto; /* let height auto scale so the aspect ratio stays the same */
+		}
 
 		header{
 		background-color: #e03a54;
 		padding: 20px;
-		width:50%;}
+		width:40%;}
 
 	</style>
 
@@ -44,21 +45,26 @@
 		<h3>Info About Me:</h2>
 		<ul>
 			<li>IP: ***********</li>
+			<li>Where I Grew up: Denver, CO</li>
 			<li>Favorite Color: <span style='color: #ff0000' >Red</span></li>
-			<li>Hometown: Denver, CO</li>
 		</ul>
 	</aside>
 
-	<article>
+	<article><!-- Favorite Place blurb-->
 		<h3>Sloan's Favorite Place: <a href="https://www.mutinybooks.com/" target="_blank">Mutiny Info Cafe</a></h3>
-		<img src="project1/mutiny.jpg" alt="mutiny">
+		<img src="project1/mutiny.jpg" alt="mutiny"><!--favorite place photo-->
 		<p>My favorite place in the world is a cafe in Denver called Mutiny. Aside from making amazing coffee Mutiny also sells used books, comics, records, and local art. They also hold local events like comedy nights, concerts, and poetry readings. They also have great baklava and bagels.</p>
 	</article>
-	<p style='color: #bd2436'>invisible</p>
-	<article id="Restaurant">
-		<h3>Sloan's Favorite Restaurant: Snarfs</h3>
-		<img src="project1/snarfs.jpg" alt="snarfs">
-		<p>This is snarfs. They make the best sandwiches. <a href="https://www.eatsnarfs.com/" target="_blank">Click to learn more</a></p>
+
+	<article><!-- Favorite Restaurant blurb-->
+		<h3>Sloan's Favorite Restaurant: <a href="https://www.eatsnarfs.com/" target="_blank">Snarfs</a></h3>
+		<img src="project1/snarfs.jpg" alt="snarfs"><!--added a photo of my favorite restaurant -->
+		<p>This is snarfs. They make the best sandwiches. My personal favorite is the french dip but honestly all of them are great. Their milkshakes are also amazing.</p>
+	</article>
+</br>
+	<article>
+		<h3>Something No One Would Expect About Me</h3>
+		<p>I once was in a swedish promotional video for volvo.</p>
 	</article>
 
 
