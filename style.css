@@ -1,0 +1,38 @@
+/*colors
+dark orange #ff8100
+*/
+body{
+	background-color:#f78e2d;
+	margin:0;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+
+
+}
+
+li.itemMenu {
+  float:left;
+
+}
+.itemMenu a{
+	display: inline-block;
+	padding: 14px 16px;
+
+	background-color: #ff8100;
+	text-decoration: none;
+
+	/*border: 1px solid #ffbe6d;*/
+	text-align: center;
+	color: white;
+
+}
+.itemMenu a:hover{
+	background-color: #ffbe82;
+	color: white;
+}
+
