@@ -19,10 +19,9 @@ header{
 }
 #menuIMG{
 	position: absolute;
-	right:18px;
-	top: 10px;
-	padding-top:3px;
-	max-width:4%
+	right:1vw;
+	top: 1vw;
+	max-height: 50%;
 }
 
 
@@ -47,7 +46,10 @@ header{
 	text-align: center;
 	font-size: 1vw;
 	color: white;
+	border: 2vw, white;
+	outline-style: solid;
 }
+
 
 .itemMenu a:hover{
 	background-color: #98CDD1;
