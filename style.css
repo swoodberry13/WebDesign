@@ -5,19 +5,31 @@ body{
 	background-color:#f78e2d;
 	margin:0;
 }
+
+/*header code*/
+header{
+	background-color: white;
+}
+#mainTitle{
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	position: relative;
+}
+#logo{
+	max-width: 30%;
+	position: center;
+}
+
+
+/*menu css code*/
 #menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: sticky;
   top: 0;
-
-
 }
-
 li.itemMenu {
   float:left;
-
 }
 .itemMenu a{
 	display: inline-block;
@@ -25,6 +37,7 @@ li.itemMenu {
 
 	background-color: #ff8100;
 	text-decoration: none;
+	font-family: Verdana, Arial, sans-serif;
 
 	/*border: 1px solid #ffbe6d;*/
 	text-align: center;
