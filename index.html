@@ -9,25 +9,30 @@
 </head>
 <body>
 <header>
-	<img id="logo" src="./images/Banner.png">
-
+	<a href="index.html"><img id="logo" src="./images/Banner.png"></a>
 	<a href="javascript:void(0);" class="icon"onclick="showMenu()">
 		<img id="menuIMG" src="./images/menuIcon.png">
-	</a>	
+	</a>
+
+	<!-- script for top navbar -->
+	<script type="text/javascript">
+		function showMenu() {
+			var x= document.getElementById('menu');
+			if (x.style.display === "block") {x.style.display = "none";}
+			else {x.style.display = "block";}
+		}
+	</script>	
 </header>
-<!--main menu -->
-	<div class="topNav">
-		<ul id="menu">
-			<li class='itemMenu'><a href="index.html">Home</a></li>
-			<li class='itemMenu'><a href="about.html">About</a></li>
-			<li class='itemMenu'><a href="request.html">Request Project</a></li>
+<div class="topNav">
+	<ul id="menu">
+		<li class='itemMenu'><a href="index.html">Home</a></li>
+		<li class='itemMenu'><a href="about.html">About</a></li>
+		<li class='itemMenu'><a href="request.html">Request Project</a>
+		</li>
 		</ul>
-	</div>
+</div>
+<!--main menu -->
 
-
-
-<br>
-<br>
 
 <ol>
 	<li>hi</li>
@@ -47,16 +52,7 @@ From the institution's perspective, hiring students to work in the makerspace ca
 Furthermore, hiring students to work in the makerspace can contribute to the overall campus community by serving as mentors and role models for their peers. As they share their knowledge and expertise with others, they not only strengthen the makerspace community but also inspire fellow students to explore their own creative potential and pursue projects of their own.
 
 In conclusion, hiring students to work in the makerspace to build projects is a win-win proposition. It provides students with valuable hands-on experience, fosters collaboration and innovation, contributes to research and innovation efforts, and enriches the overall campus community. By investing in the development of makerspace programs and providing opportunities for student involvement, institutions can empower the next generation of innovators and problem solvers.</p>
-<script type="text/javascript">
-function showMenu() {
-	var x= document.getElementById('menu');
-	if (x.style.display === "block") {x.style.display = "none";
-}
-	else {x.style.display = "block";
 
-}
-}
-</script>
 
 </body>
 </html>

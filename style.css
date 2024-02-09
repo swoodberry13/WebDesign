@@ -11,30 +11,29 @@ header{
 	background-color: white;
 	position:relative;
 }
-
 #logo{
-	max-width: 20%;
+	max-width: 16%;
 	position: center;
+	padding-left: 8px;
+	padding-top: 3px;
 }
 #menuIMG{
 	position: absolute;
 	right:18px;
 	top: 10px;
+	padding-top:3px;
 	max-width:4%
-
 }
 
 
 /*menu css code*/
-
 #menu {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding:0;
   top: 0;
   display: none;
 }
-/*.topNav #menu{}*/
 
 .itemMenu a{
 	float:right;
@@ -46,10 +45,11 @@ header{
 	font-family: Verdana, Arial, sans-serif;
 
 	text-align: center;
+	font-size: 1vw;
 	color: white;
 }
 
 .itemMenu a:hover{
-	background-color: #ffbe82;
+	background-color: #98CDD1;
 	color: white;
 }
