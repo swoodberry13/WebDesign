@@ -2,50 +2,54 @@
 dark orange #ff8100
 */
 body{
-	background-color:#f78e2d;
+	background-color:#C6D3D4;
 	margin:0;
 }
 
 /*header code*/
 header{
 	background-color: white;
+	position:relative;
 }
-#mainTitle{
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	position: relative;
-}
+
 #logo{
-	max-width: 30%;
+	max-width: 20%;
 	position: center;
+}
+#menuIMG{
+	position: absolute;
+	right:18px;
+	top: 10px;
+	max-width:4%
+
 }
 
 
 /*menu css code*/
+
 #menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   top: 0;
+  display: none;
 }
-li.itemMenu {
-  float:left;
-}
+/*.topNav #menu{}*/
+
 .itemMenu a{
-	display: inline-block;
+	float:right;
+	display: block;
 	padding: 14px 16px;
 
 	background-color: #ff8100;
 	text-decoration: none;
 	font-family: Verdana, Arial, sans-serif;
 
-	/*border: 1px solid #ffbe6d;*/
 	text-align: center;
 	color: white;
-
 }
+
 .itemMenu a:hover{
 	background-color: #ffbe82;
 	color: white;
 }
-
