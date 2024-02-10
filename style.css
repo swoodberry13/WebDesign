@@ -8,9 +8,14 @@ body{
 
 /*header code*/
 header{
-	background-color: white;
-	position:relative;
+	position:fixed;
+	width:100%;
+	top:0px;
 }
+#whiteBanner{
+	background-color: white;
+}
+
 #logo{
 	max-width: 16%;
 	position: center;
@@ -36,6 +41,7 @@ header{
 
 .itemMenu a{
 	float:right;
+
 	display: block;
 	padding: 14px 16px;
 
