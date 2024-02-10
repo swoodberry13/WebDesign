@@ -5,6 +5,12 @@ body{
 	background-color:#C6D3D4;
 	margin:0;
 }
+div p {font-family: Verdana, Arial, sans-serif;}
+p,li,a,h1,h2,h3{ 
+	font-family: Verdana, Arial, sans-serif; 
+	color:white; 
+}
+
 
 /*header code*/
 header{
@@ -14,10 +20,11 @@ header{
 }
 #whiteBanner{
 	background-color: white;
+	max-height: 60px;
 }
 
 #logo{
-	max-width: 16%;
+	max-height: 52px;
 	position: center;
 	padding-left: 8px;
 	padding-top: 3px;
