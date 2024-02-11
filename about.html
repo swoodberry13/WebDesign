@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 		.textBlock h3,h2{
-			padding-left: 8px;
+			padding-left: 18px;
 		}
 		.textBlock p{
 			padding-left: 16px;
@@ -21,33 +21,33 @@
 			border: 5px solid #98CDD1;
 			border-radius: 6px;
 		}
-
-		.bioImage{
-			border-radius: 50%;
-			max-height: 200px;
-			padding: 20px;
-			float: left;
-		}
-		#mecheIntro{
-			font-family: Verdana, Arial, sans-serif;
-			color: white;
-			background-color: #F78E2D;
-		}
-		.mechEIntro h3{
-			text-decoration: underline;
-			display: inline;
-		}
 		.grid-container {
 		  display: grid;
 		  grid-template-columns: auto auto;
-/*		  background-color: #2196F3;*/
-		  padding: 10px;
+		  background-color: #FFBE82;
+		  padding: 4px;
+		  margin: 30px;
+		  border-radius: 20px;
+
 		}
 		.grid-item {
-/*		  background-color: rgba(255, 255, 255, 0.8);*/
-/*		  border: 1px solid rgba(0, 0, 0, 0.8);*/
-		  padding: 20px;
-		  font-size: 30px;
+		  padding: 4px;
+		}
+		.grid-item h3{
+			text-decoration: underline;
+/*			display: inline;*/
+			text-align: center;
+			font-size: 2.5vw;	
+		}
+		.grid-item p li{
+			font-size: 1.8vw;
+			padding: 10px;
+		}
+		.bioImage{
+			border-radius: 50%;
+			max-height: 200px;
+			padding: 10px;
+			float: left;
 		}
 	</style>
 </head>
@@ -104,25 +104,39 @@
 </article>
 
 <div class="textBlock">
-<h2 >Meet Our MechEs!</h2>
+<h2 style="margin-left: 20px;">Meet Our MechEs!</h2>
 <div class="grid-container">
-	<div class="mechEIntro">
-	  	<div class="grid-item"><img class="bioImage"src="./images/mechEs/sloan.jpg"></div>
-		<div class="grid-item"><h3 >Sloan</h3>
-			<p>Sloan is deom</p>
+	  	<div class="grid-item">
+	  		<img class="bioImage"src="./images/mechEs/sloan.jpg">
+	  	</div>
+		<div class="grid-item">
+
+			<h3>Sloan</h3>
+			<p>With a keen eye for precision and a knack for innovation, Sloan seamlessly navigates between designing intricate robotic systems, creating stunning textile masterpieces, and harnessing the power of laser cutting technology to bring her ideas to life. Her specialties include:</p>
+			<ul>
+			<li>Robotics</li>
+			<li>Sewing</li>
+			<li>Woodworking</li>
+		</ul>
 		</div>
-		
-		
-	</div>
-
-	<div class="mechEIntro">
-		<img class="bioImage"src="./images/mechEs/julia.jpg">
-		<h3 >Julia</h3>
-	</div>
-
-
-
 </div>
+<div class="grid-container">
+		<div class="grid-item">
+			<h3 >Julia</h3>
+			<p>With a vibrant personality and a penchant for quirky creativity, Julia is known for her ability to seamlessly transition from designing complex mechanical systems to crafting intricate garments and tearing up the dance floor with her infectious energy. Her specialties include:</p>
+			<ul>
+				<li>Sewing</li>
+				<li>Stained Glass</li>
+				<li>Woodworking</li>
+				<li>lamp making</li>
+			</ul>
+		</div>
+		<div class="grid-item">
+			<img class="bioImage"src="./images/mechEs/julia.jpg">
+		</div>
+</div>
+
+
 
 </body>
 </html>

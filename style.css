@@ -15,9 +15,12 @@ p,li,a,h1,h2,h3{
 			background-color: #F78E2D;
 			border-radius: 6px;
 			padding-top: 1px;
-			padding-right: 4px;
-			padding-bottom: 4px;
-			margin: 15px;
+			padding-right: 14px;
+			padding-bottom: 14px;
+			margin-left: 35px;
+			margin-right: 35px;
+			margin-top: 20px;
+			margin-bottom: 20px;
 
 		}
 
