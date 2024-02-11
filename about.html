@@ -21,33 +21,44 @@
 			border: 5px solid #98CDD1;
 			border-radius: 6px;
 		}
-		.grid-container {
-		  display: grid;
-		  grid-template-columns: auto auto;
+		.flex-container {
+		  display: flex;
+		  flex-wrap: wrap;
 		  background-color: #FFBE82;
 		  padding: 4px;
 		  margin: 30px;
 		  border-radius: 20px;
 
 		}
-		.grid-item {
-		  padding: 4px;
+		.flex-item-right{
+			flex: 50%;
+			text-align: center;
+
 		}
-		.grid-item h3{
+		.flex-item-left{
+			flex: 50%;
+		}
+
+		.flex-item, .flex-item-right  h3{
 			text-decoration: underline;
 /*			display: inline;*/
 			text-align: center;
 			font-size: 2.5vw;	
 		}
-		.grid-item p li{
+		.flex-item,.flex-item-right  p li{
 			font-size: 1.8vw;
 			padding: 10px;
 		}
 		.bioImage{
 			border-radius: 50%;
-			max-height: 200px;
+			max-height: 240px;
 			padding: 10px;
-			float: left;
+			
+		}
+		@media (max-width: 800px) {
+			  .flex-item-right, .flex-item-left {
+			  	flex: 100%;
+			  }
 		}
 	</style>
 </head>
@@ -105,11 +116,8 @@
 
 <div class="textBlock">
 <h2 style="margin-left: 20px;">Meet Our MechEs!</h2>
-<div class="grid-container">
-	  	<div class="grid-item">
-	  		<img class="bioImage"src="./images/mechEs/sloan.jpg">
-	  	</div>
-		<div class="grid-item">
+<div class="flex-container">
+		<div class="flex-item-left">
 
 			<h3>Sloan</h3>
 			<p>With a keen eye for precision and a knack for innovation, Sloan seamlessly navigates between designing intricate robotic systems, creating stunning textile masterpieces, and harnessing the power of laser cutting technology to bring her ideas to life. Her specialties include:</p>
@@ -119,9 +127,12 @@
 			<li>Woodworking</li>
 		</ul>
 		</div>
+		<div class="flex-item-right">
+	  		<img class="bioImage"src="./images/mechEs/sloan.jpg">
+	  	</div>
 </div>
-<div class="grid-container">
-		<div class="grid-item">
+<div class="flex-container">
+		<div class="flex-item-left">
 			<h3 >Julia</h3>
 			<p>With a vibrant personality and a penchant for quirky creativity, Julia is known for her ability to seamlessly transition from designing complex mechanical systems to crafting intricate garments and tearing up the dance floor with her infectious energy. Her specialties include:</p>
 			<ul>
@@ -131,7 +142,7 @@
 				<li>lamp making</li>
 			</ul>
 		</div>
-		<div class="grid-item">
+		<div class="flex-item-right">
 			<img class="bioImage"src="./images/mechEs/julia.jpg">
 		</div>
 </div>
