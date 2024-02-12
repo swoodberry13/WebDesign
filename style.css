@@ -7,7 +7,7 @@ body{
 }
 
 div p {font-family: Verdana, Arial, sans-serif;}
-p,li,a,h1,h2,h3{ 
+p,li,a,h1,h2,h3, span,label{ 
 	font-family: Verdana, Arial, sans-serif; 
 	color:white; 
 }

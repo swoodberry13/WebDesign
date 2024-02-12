@@ -6,7 +6,11 @@
 	<title>request</title>
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
-
+		#submitButton{
+			font-family: Verdana, Arial, sans-serif; 
+			color: white; 
+			background-color: #98CDD1;		
+		}
 	</style>
 </head>
 <body>
@@ -17,13 +21,15 @@
 			<img id="menuIMG" src="./images/menuIcon.png">
 		</a>
 
-		<!-- script for top navbar -->
+		
 		<script type="text/javascript">
-			function showMenu() {
+			function showMenu() {/*script for top navbar*/
 				var x= document.getElementById('menu');
 				if (x.style.display === "block") {x.style.display = "none";}
 				else {x.style.display = "block";}
 			}
+
+			/*script for material selection drop down*/
 			function pickWood(){
 				var woodBox =document.getElementById("woodcheck");
 				var woodWords=document.getElementById("woodchoice");
@@ -36,6 +42,28 @@
 				if (metalBox.checked== true) {metalWords.style.display = "inline";}
 				else{metalWords.style.display = "none";}
 			}
+			function pickAcrylic(){
+				var acrylicBox= document.getElementById("acryliccheck");
+				var acrylicWords =document.getElementById("acrylicchoice");
+				if (acrylicBox.checked== true) {acrylicWords.style.display = "inline";}
+				else{acrylicWords.style.display = "none";}
+			}
+			function roboOtherJob(){/*displays text box asking user to elaborate on their robot,displays text box asking user to elaborate on what other means,makes text disappear if one isn't checked*/
+				var roboBox=document.getElementById("robo")
+				var roboWords= document.getElementById("robotype")
+				var otherBox=document.getElementById("other")
+				var otherWords= document.getElementById("othertype")
+				if (otherBox.checked== true) {otherWords.style.display = "inline";}
+				else{otherWords.style.display = "none";}
+				if (roboBox.checked== true) {roboWords.style.display = "inline";}
+				else{roboWords.style.display = "none";}
+			}
+			// function otherJob(){/*displays text box asking user to elaborate on what other means*/
+				
+			// 	if (otherBox.checked== true) {otherWords.style.display = "inline";}
+			// 	else{otherWords.style.display = "none";}
+			// }
+
 		</script>
 	</div>	
 	<!--main menu -->
@@ -49,32 +77,89 @@
 </div>
 </header>
 <br><br><br>
-hi
-<form action="#">
-	<input type="checkbox" name="material" value="wood" id="woodcheck" onclick="pickWood()">Wood</input>
+<div class="textBlock" style="padding: 2vw;">
+	<h2>Request Form</h2>
+	<h3 style="font-weight: normal;">Fill out the form below to request your own MechE made item. Upon receiving your request our team will reach out to see how we can best serve you!</h3>
+	<br>
+	<form action="#">
+		<label for="email">Enter your email:</label>
+			<input type="email" id="email" name="email" autocomplete="off" >
 
-	<input type="checkbox" name="material" value="metal" id="metalcheck" onclick="pickMetal()">Metal</input>
-	<input type="checkbox" name="material" value="acrylic"id="acryliccheck">Acrylic</input>
-	<div style="display: block;">
-	<div id="woodchoice" style="display:none">
-		<select name="woodType">
-			<option value="Balsa">Balsa</option>
-			<option value="Birch">Birch</option>
-			<option value="Maple">Maple</option>
-			<option value="Oak">Oak</option>
-		</select>
-	</div>
-	<div id="metalchoice" style="display:none">
-		<select name="metalType">
-			<option value="Aluminum">Aluminum</option>
-			<option value="Brass">Brass</option>
-			<option value="Copper">Copper</option>
-			<option value="Steel">Steel</option>
-		</select>
-	</div>
-	</div>
+		<br><br>
+		<p>What type of item would you like?</p>
+			<input type="radio" name="item" value="cutboard" onclick="roboOtherJob()">
+				<span>Cutting Board</span></input>
+			<input type="radio" name="item" value="lamp" onclick="roboOtherJob()">
+				<span>Lamp</span></input>
+			<input type="radio" name="item" value="pencil" onclick="roboOtherJob()">
+				<span>Pencil Case</span></input>
+			<input type="radio" name="item" value="robo" id="robo" onclick="roboOtherJob()">
+				<span>Robot</span></input>
+			<input type="radio" name="item" value="shelf" onclick="roboOtherJob()">
+				<span>Shelf</span></input>
+			<input type="radio" name="item" value="other" id="other" onclick="roboOtherJob()">
+				<span>Other</span></input>
+			<br>
+
+			<!-- code for robot pop up -->
+			<div id="robotype" style="display:none; margin-top: 20px;">
+				<br>
+				<label for="robotSpecs">Please elaborate on the type of robot you would like:</label>
+				<input type="text" name="robotSpecs" id="robotSpecs">
+			</div>
+
+			<!-- code for other pop up -->
+			<div id="othertype" style="display:none"> 
+				<br>
+				<label for="otherDescription">Please elaborate on what you would like:</label>
+				<input type="text" name="otherDescription" id="otherDescription">
+			</div>
+		<br>
+		<p>What Material(s) would you like your item to be made of?</p>
+			<input type="checkbox" name="material" value="wood" id="woodcheck" 
+			onclick="pickWood()"><span>Wood</span></input>
+			<input type="checkbox" name="material" value="metal" id="metalcheck" 
+			onclick="pickMetal()"><span>Metal</span></input>
+			<input type="checkbox" name="material" value="acrylic"id="acryliccheck"
+			 onclick="pickAcrylic()"><span>Acrylic</span></input>
+			<div style="display: block;">
+				<!-- wood selection pop up -->
+				<div id="woodchoice" style="display:none">
+					<select name="woodType">
+						<option value="Balsa">Balsa</option>
+						<option value="Birch">Birch</option>
+						<option value="Maple">Maple</option>
+						<option value="Oak">Oak</option>
+					</select>
+				</div>
+				<!-- metal selection pop up -->
+				<div id="metalchoice" style="display:none">
+					<select name="metalType">
+						<option value="Aluminum">Aluminum</option>
+						<option value="Brass">Brass</option>
+						<option value="Copper">Copper</option>
+						<option value="Steel">Steel</option>
+					</select>
+				</div>
+				<!-- acrylic selection pop up -->
+				<div id="acrylicchoice" style="display:none">
+					<select name="acrylicType">
+						<option value="Clear">Clear Acrylic</option>
+						<option value="Colored">Colored Acrylic</option>
+						<option value="Frosted">Frosted Acrylic</option>
+					</select>
+				</div>
+			</div>
+		<br>
+		<label for="additional">Any other questions or comments?</label>
+			<br>
+			<input type="text" name="additional" id="additional">
+			<br>
+			<br>
+		<input type = "submit" id= "submitButton" value = "Submit!">
 
 </form>
+</div>
 
 </body>
 </html>
