@@ -85,6 +85,7 @@
 			if (x.style.display === "block") {x.style.display = "none";}
 			else {x.style.display = "block";}
 		}
+
 	</script>
 	</div>	
 	<!--main menu -->
@@ -97,6 +98,28 @@
 		</ul>
 	</div>
 </header>
+
+<button onclick="toTop()" id="topbutton" title="backToTop">back to top</button>
+	<script type="text/javascript">
+				// code for scroll to top button
+			let mybutton = document.getElementById("topbutton");
+			window.onscroll = function() {scrollFunction()};
+
+			// scrollFunction() checks to see if the user is far enough down to display the scroll to top button
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} 
+				else {mybutton.style.display = "none";}
+			}
+
+			// scrolls to top 
+			function toTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+	</script>
+
 <div class="textBlock" style="margin-top:15px; background-color: #E4771C;">
 	<h2>Welcome to MechEMake</h2>
 	<p> This is where innovation meets craftsmanship! We're not just a business; we're a collective of passionate mechanical engineering students who're trying to figure out what to do with all the random things we make.
