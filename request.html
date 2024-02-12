@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>request</title>
 	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+
+	</style>
 </head>
 <body>
 <header>
@@ -21,6 +24,18 @@
 				if (x.style.display === "block") {x.style.display = "none";}
 				else {x.style.display = "block";}
 			}
+			function pickWood(){
+				var woodBox =document.getElementById("woodcheck");
+				var woodWords=document.getElementById("woodchoice");
+				if (woodBox.checked==true) { woodWords.style.display = "inline";}
+				else{woodWords.style.display = "none";}
+			}
+			function pickMetal(){
+				var metalBox= document.getElementById("metalcheck");
+				var metalWords =document.getElementById("metalchoice");
+				if (metalBox.checked== true) {metalWords.style.display = "inline";}
+				else{metalWords.style.display = "none";}
+			}
 		</script>
 	</div>	
 	<!--main menu -->
@@ -33,6 +48,33 @@
 		</ul>
 </div>
 </header>
-request
+<br><br><br>
+hi
+<form action="#">
+	<input type="checkbox" name="material" value="wood" id="woodcheck" onclick="pickWood()">Wood</input>
+
+	<input type="checkbox" name="material" value="metal" id="metalcheck" onclick="pickMetal()">Metal</input>
+	<input type="checkbox" name="material" value="acrylic"id="acryliccheck">Acrylic</input>
+	<div style="display: block;">
+	<div id="woodchoice" style="display:none">
+		<select name="woodType">
+			<option value="Balsa">Balsa</option>
+			<option value="Birch">Birch</option>
+			<option value="Maple">Maple</option>
+			<option value="Oak">Oak</option>
+		</select>
+	</div>
+	<div id="metalchoice" style="display:none">
+		<select name="metalType">
+			<option value="Aluminum">Aluminum</option>
+			<option value="Brass">Brass</option>
+			<option value="Copper">Copper</option>
+			<option value="Steel">Steel</option>
+		</select>
+	</div>
+	</div>
+
+</form>
+
 </body>
 </html>

@@ -6,6 +6,46 @@
 	<title>Main Page</title>
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
+		.titleBlock{
+			background-color: #98CDD1;
+			margin: 7vw;
+			border: 5px solid white;
+			border-radius: 2vw;
+
+		}
+		.titleBlock h1,h2,h3{
+			padding: 0;
+			text-align: center; 
+			color:#FF8100;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+		.column {
+			flex: 33%;
+			max-width: 33%;
+			padding: 0 4px;
+		}
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+			border: 5px solid #98CDD1;
+		}
+
+		@media (max-width: 500px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+		@media (max-width: 400px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
 
 	</style>
 </head>
@@ -40,22 +80,37 @@
 </header>
 <br><br>
 
-
-	<h1 style=" text-align: center; color:#FF8100; font-size: 5vw;">Welcome to MechE Make</h1>
-	<h3 style="text-align: center; color: #FF8100;"> Your one stop shop for custom made gadgets and gismos!</h2>
-
+<div class="titleBlock">
+	<h1 style="padding-bottom:0; font-size: 5vw;">Welcome to MechE Make</h1>
+	<h2 style="font-size: 2vw;"> Your one stop shop for custom made gadgets and gismos!</h2>
+</div>
 	<div class="textBlock" style="background-color: #FFBE82; padding: 10px;">
 		<h3>Projects our MechEs have made:</h3>
-
-			 	<img src="./images/projects/project2.jpeg">
-			 	<img src="./images/projects/project3.jpeg">
-
-				<img src="./images/projects/project4.jpeg">
-			 	<img src="./images/projects/project5.jpeg">
-			 	<img src="./images/projects/project6.jpeg">
-			 	<img src="./images/projects/project7.jpeg">
-			 	<img src="./images/projects/project8.jpg">
-
+			<div class="row" style="text-align:center;">
+				<div class="column">
+					<img src="./images/projects/project1.jpeg" style="width:70%">
+					<img src="./images/projects/project2.jpeg" style="width:70%">
+					<img src="./images/projects/project3.jpeg" style="width:70%">
+					<img src="./images/projects/project12.jpeg" style="width:70%">
+				</div>
+				<div class="column">
+					<img src="./images/projects/project4.jpeg" style="width:70%">
+					<img src="./images/projects/project5.jpeg" style="width:70%">
+					<img src="./images/projects/project6.jpeg" style="width:70%">
+					<img src="./images/projects/project11.jpeg" style="width:70%">
+				</div>
+				<div class="column">
+					<img src="./images/projects/project7.jpeg" style="width:70%">
+					<img src="./images/projects/project8.jpg" style="width:70%">
+					<img src="./images/projects/project9.jpeg" style="width:70%">
+					<img src="./images/projects/project10.jpeg" style="width:70%">
+				</div>
+<!-- 				<div class="column">
+					<img src="./images/projects/project10.jpeg" style="width:70%">
+					<img src="./images/projects/project11.jpeg" style="width:70%">
+					<img src="./images/projects/project12.jpeg" style="width:70%">
+				</div>	 -->			
+			</div>
 
 	</div>
 
