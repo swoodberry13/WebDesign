@@ -43,6 +43,13 @@ p,li,a,h1,h2,h3, span,label{
 	background-color:#62c5cc;
 }
 
+/*making it easier to see on mobile*/
+@media (max-width: 800px){ 
+	#topbutton{
+		font-size: 3vw;
+	}
+}
+
 
 /*header code*/
 header{
