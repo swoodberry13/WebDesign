@@ -44,7 +44,7 @@ p,li,a,h1,h2,h3, span,label{
 }
 
 /*making it easier to see on mobile*/
-@media (max-width: 1000px){ 
+@media (max-width: 600px){ 
 	#topbutton{
 		font-size: 3vw;
 	}
